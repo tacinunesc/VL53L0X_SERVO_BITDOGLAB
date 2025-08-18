@@ -9,7 +9,8 @@ Este projeto visa criar um firmware para controlar e vizualizar a distancia com 
 display Oled inclusos na placa Raspberry Pi Pico W (BItDogLab).
 
 <div align="center">
-  <img src="img/mpu.jpg "  alt="Controle" width="50%">
+  <img src="IMG_20250818_141958373.jpg "  alt="Controle" width="30%">
+  <img src="IMG_20250818_142034357_MFNR_HDR.jpg"  alt="Controle" width="30%">
 </div>
 
 ## 🛠️ Estrutura do projeto
