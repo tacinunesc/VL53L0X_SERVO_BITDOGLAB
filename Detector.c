@@ -19,7 +19,13 @@ void exibir_oled(uint16_t distancia_cm, const char* estado_porta) {
     ssd1306_SetCursor(0, 0);
     ssd1306_WriteString("MONITOR DISTANCIA", Font_7x10, White);
 
-    snprintf(buffer, sizeof(buffer), "DISTANCIA: %d cm", distancia_cm);
+    // Exibe em metros se >= 100cm
+    if (distancia_cm >= 100) {
+        float distancia_m = distancia_cm / 100.0f;
+        snprintf(buffer, sizeof(buffer), "DISTANCIA: %.2f m", distancia_m);
+    } else {
+        snprintf(buffer, sizeof(buffer), "DISTANCIA: %d cm", distancia_cm);
+    }
     ssd1306_SetCursor(0, 16);
     ssd1306_WriteString(buffer, Font_7x10, White);
 
