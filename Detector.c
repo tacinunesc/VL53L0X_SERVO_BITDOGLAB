@@ -19,7 +19,7 @@ void exibir_oled(uint16_t distancia_cm, const char* estado_porta) {
     ssd1306_SetCursor(0, 0);
     ssd1306_WriteString("MONITOR DISTANCIA", Font_7x10, White);
 
-    snprintf(buffer, sizeof(buffer), "DISTANCIA: %d mm", distancia_cm);
+    snprintf(buffer, sizeof(buffer), "DISTANCIA: %d cm", distancia_cm);
     ssd1306_SetCursor(0, 16);
     ssd1306_WriteString(buffer, Font_7x10, White);
 
