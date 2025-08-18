@@ -14,7 +14,7 @@ display Oled inclusos na placa Raspberry Pi Pico W (BItDogLab).
 </div>
 
 ## 🛠️ Estrutura do projeto
-- Detector.c – Programa principal em C que faz leitura presença, com base nesta informação utiliza o servo motor girar para direito caso aja menos 10mm e para a esquerda de 10mm ou mais e essa informação é exibida no porta serial e no visor oled da BitDogLab
+- Detector.c – Programa principal em C que faz leitura de presença, com base nesta informação utiliza o servo motor girar para direita caso haja presença detectada a menos de 10cm e para a esquerda de 10cm ou mais e essa informação é exibida no porta serial e no visor oled da BitDogLab
 - vl53l0x.c - Onde fica as definições do sensor de distancia
 - servo.c - Onde fica as definições do atuador servo motor
 - Pasta inc - Onde esta localizada as informações da oled
@@ -53,9 +53,9 @@ A cada segundo, o sistema:
 - Exibe o valor no display OLED, com a distancia detectada e acesso autorizado
 - Com isso, ele acende um LED correspondente ao nível de aceleração:
 
-   * 🟢 Verde: acesso autorizado, com distancia detectada menor que 10mm, ou seja, está aberto
+   * 🟢 Verde: acesso autorizado, com distancia detectada menor que 10cm, ou seja, está aberto
 
-   * 🔴 Vermelho: acesso autorizado, com distancia detectada maior ou igual a 10mm, ou seja, está fechado
+   * 🔴 Vermelho: acesso autorizado, com distancia detectada maior ou igual a 10cm, ou seja, está fechado
  
 3. Controle do servo motor
 - Porta abre (servo gira para a direita) se a distância for menor que 10 cm.
