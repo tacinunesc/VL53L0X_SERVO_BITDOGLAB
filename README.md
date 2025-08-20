@@ -46,12 +46,12 @@ O programa realiza as seguintes ações:
 - Configura os pinos dos LEDs RGB
 - Inicializa o sinal PWM para controle do servo motor
 
-2. Leitura da luminosidade
+2. Leitura da distancia
 A cada segundo, o sistema:
 
 - Detecta a presença com o sensor de distancia VL53L0X
 - Exibe o valor no display OLED, com a distancia detectada e acesso autorizado
-- Com isso, ele acende um LED correspondente ao nível de aceleração:
+- Com isso, ele acende um LED correspondente ao nível:
 
    * 🟢 Verde: acesso autorizado, com distancia detectada menor que 10cm, ou seja, está aberto
 
@@ -64,7 +64,7 @@ A cada segundo, o sistema:
 ## 📦 Dependências
 
 vl53l0x.h para o sensor de distancia
-
+servo.h para o atuador servo motor
 ssd1306.h e ssd1306_fonts.h para o display OLED
 
 servo.h para atuador servo motor
