@@ -41,8 +41,9 @@ Hardware:
 O programa realiza as seguintes ações:
 
 1. Inicialização dos periféricos
-- Configura o barramento I2C0 (pinos GPIO 0 e 1)
-- Inicializa o sensor MPU6500 e o display OLED SSD1306
+- Configura o barramento I2C0 (SDA_I2C = 0 | SCL_I2C = 1) para o sensor de distancia
+- Gpio 2 para o servo motor
+- Inicializa o sensor VL53L0X e o display OLED SSD1306
 - Configura os pinos dos LEDs RGB
 - Inicializa o sinal PWM para controle do servo motor
 
